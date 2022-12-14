@@ -1,8 +1,12 @@
-var builder = WebApplication.CreateBuilder(args);
+using biblio_react_aspnet;
 
+var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllersWithViews();
+
+//Calling Database
+builder.Services.AddDbContext<AppDbContext>();
 
 var app = builder.Build();
 
