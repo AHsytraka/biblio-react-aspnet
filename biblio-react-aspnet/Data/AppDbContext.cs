@@ -10,5 +10,5 @@ public class AppDbContext: DbContext
     }
 
     //Creating authentication table
-    DbSet<Authentification>? Authentifications {get; set;}
+    public DbSet<Authentification> Authentifications {get; set;} = null!;
 }
