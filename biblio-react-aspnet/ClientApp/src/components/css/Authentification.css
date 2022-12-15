@@ -4,3 +4,105 @@
 	padding: 0;
 	transition: all 0.8s ease-in-out;
 }
+
+/*----------BODY & FORM---------*/
+
+p {
+    margin-bottom: 0;
+}
+.login-title {
+    color: rgb(153, 0, 255);
+    margin-left: 95px;
+    margin-top: 40px;
+}
+
+.login-container {
+    width: 85%;
+    border: 1px solid rgb(172, 172, 172);
+    border-radius: 5px;
+    margin: 0 90px 0 90px;
+    box-shadow: 1px 1px 2px 1px rgb(179, 179, 179);
+    background: url(../assets/images/login-background.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.jap-word {
+    margin: 20px 0px 0px 40px;
+}
+
+.login-frame {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(153, 0, 255);
+    border-radius: 10px;
+    margin: 30px 250px 80px 250px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.151);
+    backdrop-filter: blur(5px);
+}
+
+.login-frame h5 {
+    text-align: center;
+    font-weight: 750;
+}
+
+.login-frame form {
+    align-self: center;
+}
+
+.login-frame form label {
+    display: block;
+    font-size: 14px;
+    color: rgb(170, 170, 170);
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.login-frame form input {
+    width: 300px;
+    height: 40px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.363);
+}
+
+.login-frame form .form-button {
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    margin-top: 10px;
+}
+
+.social-frame {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-frame-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.social-frame-1 div {
+    width: 100px;
+    height: 2px;
+    margin: 10px;
+    margin-bottom: 10px;
+    background-color: black;
+}
+
+.social-frame-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-image {
+    width: 25px;
+    height: 25px;
+    margin:0 20px 0 20px;
+}
