@@ -1,4 +1,4 @@
-using biblio_react_aspnet;
+using biblio_react_aspnet.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
@@ -7,6 +7,10 @@ builder.Services.AddControllersWithViews();
 
 //Calling Database
 builder.Services.AddDbContext<AppDbContext>();
+
+//Adding Json Serialization
+builder.Services.AddControllersWithViews()
+    .AddJsonOptions(options => options.JsonSerializerOptions.PropertyNamingPolicy=null);
 
 var app = builder.Build();
 
@@ -26,6 +30,6 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller}/{action=Index}/{id?}");
 
-app.MapFallbackToFile("index.html");;
+app.MapFallbackToFile("index.html");
 
 app.Run();

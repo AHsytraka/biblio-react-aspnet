@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using biblio_react_aspnet.Model;
 
-namespace biblio_react_aspnet;
+namespace biblio_react_aspnet.Data;
 
 public class AppDbContext: DbContext 
 {
