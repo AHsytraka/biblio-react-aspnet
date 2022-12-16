@@ -15,12 +15,12 @@ const Authentification = () => {
                     <h5>Se connecter</h5>
                     <form>
                         <label>Nom d'utilisateur </label>
-                        <input type="text" name="nom" />
+                        <input type="text" name="name" />
                         <br />
                         <label>Mot de passe</label>
                         <input type="password" name="password" />
                         <br />
-                        <input className="form-button" type="button" value="Connecter" />
+                        <input className="form-button" type="button" value="Connecter"/>
                     </form>
 
                     <section className="social-frame">
