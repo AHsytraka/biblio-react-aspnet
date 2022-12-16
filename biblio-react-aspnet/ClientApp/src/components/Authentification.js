@@ -9,7 +9,6 @@ import JapWord from "./assets/images/jap-word.png";
 const Authentification = () => {
     return (
         <body>
-            <p className="login-title"> ❖ Login</p>
             <section className="login-container">
             <img className="jap-word" src={JapWord}/>
                 <div className="login-frame">
