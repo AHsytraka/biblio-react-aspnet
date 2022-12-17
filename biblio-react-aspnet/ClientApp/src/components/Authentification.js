@@ -1,4 +1,4 @@
-import React, { ReactDOM, Component, useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import "./css/Authentification.css";
 import GoogleIcon from "./assets/images/google-icon.png";
@@ -27,7 +27,13 @@ const Authentification = () => {
             Password : password,
             Type: "Add"
         }
-        //add axios
+        .post(`${url}/api/Authentification/AddAuth`,data)
+        .then((json) => {
+            alert(JSON.stringify(json))
+        })
+        .catch((error) => {
+            console.log(error)
+        })
     }
 
     return (
