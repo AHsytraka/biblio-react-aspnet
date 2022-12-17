@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from 'axios';
 
 import "./css/Authentification.css";
 import GoogleIcon from "./assets/images/google-icon.png";
@@ -27,6 +28,7 @@ const Authentification = () => {
             Password : password,
             Type: "Add"
         }
+        axios
         .post(`${url}/api/Authentification/AddAuth`,data)
         .then((json) => {
             alert(JSON.stringify(json))
@@ -37,7 +39,7 @@ const Authentification = () => {
     }
 
     return (
-        <body>
+        <div>
             <section className="login-container">
             <img className="jap-word" src={JapWord}/>
                 <div className="login-frame">
@@ -79,14 +81,14 @@ const Authentification = () => {
                             <div></div><p>Autre moyen de se connecter</p><div></div>
                         </div>
                         <div className="social-frame-2">
-                            <a href="https://www.google.com"><img className="social-image" src={GoogleIcon}/></a>
-                            <a href="https://www.facebook.com"><img className="social-image" src={FbIcon}/></a>
-                            <a href="https://www.instagram.com"><img className="social-image" src={InstaIcon}/></a>
+                            <a href="https://www.google.com"><img className="social-image" alt="images" src={GoogleIcon}/></a>
+                            <a href="https://www.facebook.com"><img className="social-image" alt="images" src={FbIcon}/></a>
+                            <a href="https://www.instagram.com"><img className="social-image" alt="images" src={InstaIcon}/></a>
                         </div>
                     </section>
                 </div>
             </section>
-        </body>
+        </div>
     )
 }
 
