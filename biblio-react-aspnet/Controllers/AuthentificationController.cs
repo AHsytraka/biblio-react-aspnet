@@ -5,6 +5,8 @@ using biblio_react_aspnet.Model;
 
 namespace biblio_react_aspnet.Controllers;
 
+[ApiController]
+[Route("[controller]")]
 public class AuthentificationController : Controller
 {
     //Controller consists of two Action Methods
@@ -16,7 +18,7 @@ public class AuthentificationController : Controller
     */
 
     AppDbContext db = new AppDbContext();
-    [Route("api/Authentification/AddAuth")]
+    [Route("/api/Authentification/AddAuth")]
     [HttpPost]
     public Response AddAuth(AuthModel authModel)
     {

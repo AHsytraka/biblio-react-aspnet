@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import axios from 'axios';
-
 import "./css/Authentification.css";
 import GoogleIcon from "./assets/images/google-icon.png";
 import FbIcon from "./assets/images/facebook-icon.png";
 import InstaIcon from "./assets/images/instagram-icon.png"
 import JapWord from "./assets/images/jap-word.png";
+
+
 
 const Authentification = () => {
     //React Hook useState allow to track state in a function component
@@ -20,7 +21,7 @@ const Authentification = () => {
     const [authentification, setAuthentification] = useState([]);
 
     //handling submit
-    const url = "https://localhost:44409/";
+    const url = "https://localhost:7271";
     const Submitting = (e) => {
         // alert(username +" "+ password)
         const data = {
@@ -34,7 +35,7 @@ const Authentification = () => {
             alert(JSON.stringify(json))
         })
         .catch((error) => {
-            console.log(error)
+            alert(error)
         })
     }
 
