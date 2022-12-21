@@ -1,8 +1,6 @@
 {
   "name": "biblio_react_aspnet",
   "version": "0.1.0",
-  "proxy": "https://localhost:7271",
-  "homepage":"https://localhost:44401",
   "private": true,
   "dependencies": {
     "axios": "^1.2.1",
